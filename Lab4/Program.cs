@@ -25,7 +25,7 @@ namespace Lab4
 
             for (int i = 1; i <= inputNumber; i++)
             {
-                sumTotal = sumTotal + (i * 2 - 1);
+                sumTotal = sumTotal + (i * 2 - 1); //Подсчет текущего i значения
                 Console.WriteLine(sumTotal);
 
             }
