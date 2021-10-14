@@ -18,19 +18,22 @@ namespace TestApp3
             Ввести положительные числа A, B, C. На прямоугольнике размера A x B размещено максимально возможное количество 
             квадратов со стороной C (без наложений). Найти количество квадратов, размещенных на прямоугольнике. 
             Операции умножения и деления не использовать.*/
-
-            int valueA, valueB, valueC, valueX, valueY, valueS;
-            Console.WriteLine("A");
-            valueA= Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("B");
-            valueB = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("C");
-            valueC = Convert.ToInt32(Console.ReadLine());
             
+            //определение переменных
+            int valueA, valueB, valueC, valueX, valueY, valueS;
+            //ввод ИД
+            Console.WriteLine("Введи положительные числа A, B, C, где А и B стороны прямоугольника, C - размер стороны квадрата");
+            Console.Write("Введите A: ");
+            valueA= Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите B: ");
+            valueB = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите C: ");
+            valueC = Convert.ToInt32(Console.ReadLine());
+            //Присвоение значений промежуточным переменных
             valueX = valueC;
             valueY = valueC;
             valueS = 0;
-            
+            //Подсчет квадратов в параметрах
             while (valueX<=valueA)
             {
                 valueS++;
@@ -44,7 +47,7 @@ namespace TestApp3
                 valueY = valueY + valueC;
                                
             }
-            Console.WriteLine("--->{0}", valueS);
+            Console.WriteLine("Количество квадратов размещенных в прямоугольнике равно {0}", valueS);
             Console.ReadKey();
         }
     }
